@@ -1,3 +1,4 @@
-python-telegram-bot==20.7
-playwright==1.40.0
-fake-useragent==1.4.0
+python-telegram-bot==20.0a0
+playwright==1.35.0
+fake-useragent==1.1.0
+greenlet==2.0.2
