@@ -2,16 +2,18 @@ services:
   - type: web
     name: instagram-spam-bot
     runtime: python
-    pythonVersion: 3.11.9          # <--- Add this line
+    pythonVersion: 3.11.9
     region: oregon
     plan: free
     buildCommand: |
-      pip install --upgrade pip setuptools wheel
+      pip install --upgrade pip
       pip install -r requirements.txt
       playwright install chromium
     startCommand: python bot.py
     envVars:
       - key: OWNER_ID
         value: 8336576838
+      - key: PYTHON_VERSION
+        value: 3.11.9
     healthCheckPath: /health
     autoDeploy: true
