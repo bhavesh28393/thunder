@@ -1,0 +1,3 @@
+git add render.yaml
+git commit -m "Fix build command syntax"
+git push origin main
