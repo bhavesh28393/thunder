@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: instagram-bot
+    runtime: python
+    pythonVersion: 3.11.9
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      playwright install chromium
+    startCommand: python bot.py
+    envVars:
+      - key: OWNER_ID
+        value: 8336576838
+    healthCheckPath: /health
+    autoDeploy: true
