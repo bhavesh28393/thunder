@@ -2,6 +2,7 @@ services:
   - type: web
     name: instagram-spam-bot
     runtime: python
+    pythonVersion: 3.11.9          # <--- Add this line
     region: oregon
     plan: free
     buildCommand: |
