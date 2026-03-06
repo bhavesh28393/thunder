@@ -1,0 +1,5 @@
+python-telegram-bot==20.7
+playwright==1.40.0
+greenlet==3.0.1
+cffi==1.16.0
+pycparser==2.21
